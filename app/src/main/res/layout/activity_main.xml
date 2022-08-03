@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.nestedscrollviewtry.view.MyNestedScrollParentL xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/jinmao" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f"
+        android:text="努力！  奋斗！"
+        tools:ignore="HardcodedText" />
+
+    <com.example.nestedscrollviewtry.view.MyNestedScrollChildL
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/temp_txt"
+            android:textColor="#FF000000"
+            android:textSize="24sp" />
+    </com.example.nestedscrollviewtry.view.MyNestedScrollChildL>
+
+</com.example.nestedscrollviewtry.view.MyNestedScrollParentL>
